@@ -1,5 +1,5 @@
 #Case study 3
-#Raspopova Alexandra 80%
+#Raspopova Alexandra 60%
 #Belozertseva Maria 60%
 #Adristi Fauzi 50%
 years = int(input("Срок размещения капитала (лет): "))
