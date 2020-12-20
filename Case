@@ -1,53 +1,18 @@
-years = int(input("Срок размещения капитала (лет):"))
-initial_capital = float(input("Начальный капитал ($):"))
-p = float(input("Процентная ставка (%/мес.):"))
-invest = float(input("Инвестиционные вливания ($/мес.):"))
-for year in range (1, years + 1):
-    print(year,"год")
-    print ("-------------------------------------------")
-    print ("|       |   основа   | сумма %  |         |")
-    print ("| месяц | инвестиций | за месяц | капитал |")
-    print ("-------------------------------------------")
-    for d in range(1, 13):
-        sn = initial_capital + initial_capital * p / 100 + invest
-        y = initial_capital * p / 100
-        print('|{:^7}|'.format(d), '{:<11}|'.format("%.2f" % initial_capital), '{:^9}|'.format("%.2f" % y), '{:<8}|'.format("%.2f" % (initial_capital+y)))
-        initial_capital = sn
-        d += 1
-    print("-------------------------------------------", "\n")
-
 years = int(input("Срок размещения капитала (лет): "))
 initial_capital = float(input("Начальный капитал ($): "))
 p = float(input("Процентная ставка (%/мес.): "))
 invest = float(input("Инвестиционные вливания ($/мес.): "))
-for year in range (1, years + 1):
-    print(year,"год")
-    print ("---------------------------------------------")
-    print ("|        |  основа   | сумма %  |           |")
-    print ("| месяц  |инвестиций | за месяц | капитал   |")
-    print ("---------------------------------------------")
+for year in range(1, years + 1):
+    print(year, "год")
+    print("---------------------------------------------")
+    print("|       |  основа    | сумма %  |           |")
+    print("| месяц | инвестиций | за месяц | капитал   |")
+    print("---------------------------------------------")
     for d in range(1, 13):
         sn = initial_capital + initial_capital * p / 100 + invest
         y = initial_capital * p / 100
-        print('|{:^7}'.format(d), '|{:<11}|'.format("%.2f" % initial_capital), '{:^8}'.format("%.2f" % y), '|{:<11}|'.format("%.2f" % (initial_capital+y)))
-        initial_capital = sn
-        d += 1
-    print("---------------------------------------------", "\n")
-    
-    years = int(input("Срок размещения капитала (лет): "))
-initial_capital = float(input("Начальный капитал ($): "))
-p = float(input("Процентная ставка (%/мес.): "))
-invest = float(input("Инвестиционные вливания ($/мес.): "))
-for year in range (1, years + 1):
-    print(year,"год")
-    print ("---------------------------------------------")
-    print ("|       |  основа    | сумма %  |           |")
-    print ("| месяц | инвестиций | за месяц | капитал   |")
-    print ("---------------------------------------------")
-    for d in range(1, 13):
-        sn = initial_capital + initial_capital * p / 100 + invest
-        y = initial_capital * p / 100
-        print('|{:^7}|'.format(d), '{:<11}|'.format("%.2f" % initial_capital), '{:^8}'.format("%.2f" % y), '|{:<10}|'.format("%.2f" % (initial_capital+y)))
+        print('|{:^7}|'.format(d), '{:<11}|'.format("%.2f" % initial_capital), '{:^8}'.format("%.2f" % y), 
+              '|{:<10}|'.format("%.2f" % (initial_capital+y)))
         initial_capital = sn
         d += 1
     print("---------------------------------------------", "\n")
