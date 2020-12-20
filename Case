@@ -1,7 +1,7 @@
 #Case study 3
 #Raspopova Alexandra 60%
 #Belozertseva Maria 60%
-#Adristi Fauzi 50%
+#Adristi Fauzi 40%
 years = int(input("Срок размещения капитала (лет): "))
 initial_capital = float(input("Начальный капитал ($): "))
 p = float(input("Процентная ставка (%/мес.): "))
