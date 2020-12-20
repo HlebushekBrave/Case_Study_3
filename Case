@@ -12,7 +12,7 @@ for year in range(1, years + 1):
         sn = initial_capital + initial_capital * p / 100 + invest
         y = initial_capital * p / 100
         print('|{:^7}|'.format(d), '{:<11}|'.format("%.2f" % initial_capital), '{:^8}'.format("%.2f" % y), 
-              '|{:<10}|'.format("%.2f" % (initial_capital+y)))
+              '|{:<11}|'.format("%.2f" % (initial_capital+y)))
         initial_capital = sn
         d += 1
     print("---------------------------------------------", "\n")
