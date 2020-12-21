@@ -20,4 +20,3 @@ for year in range(1, years + 1):
         initial_capital = sn
         d += 1
     print("---------------------------------------------", "\n")
-3
